@@ -1,0 +1,520 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "command": "npm run docs:assets",
+  "renderer": {
+    "name": "Installed app QtSvg through a measured local adapter",
+    "version": "6.11.1",
+    "deviceEquivalence": "INFERRED until physical photograph calibration"
+  },
+  "font": "fc1863ab504b9c160abaa12b92296363db72f5b759311982510a85fe2aa9ff4f",
+  "sampleData": true,
+  "readings": [
+    {
+      "key": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+      "label": "CPU super core 1",
+      "unit": "°C",
+      "value": 62.4,
+      "type": 1,
+      "id": 1,
+      "sensorIndex": 0,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 1
+    },
+    {
+      "key": "mac:v1:smc:Mac17%2C9:54673055:temp.v1",
+      "label": "GPU 1",
+      "unit": "°C",
+      "value": 54.8,
+      "type": 1,
+      "id": 2,
+      "sensorIndex": 0,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 2
+    },
+    {
+      "key": "mac:v1:smc:Mac17%2C9:46304163:rpm.v1",
+      "label": "Fan 1",
+      "unit": "RPM",
+      "value": 1820,
+      "type": 3,
+      "id": 3,
+      "sensorIndex": 0,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 3
+    },
+    {
+      "key": "mac:v1:smc:Mac17%2C9:50535452:power.v1",
+      "label": "System Total",
+      "unit": "W",
+      "value": 38.6,
+      "type": 5,
+      "id": 4,
+      "sensorIndex": 0,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 4
+    },
+    {
+      "key": "mac:v1:system:cpu-total",
+      "label": "CPU usage",
+      "unit": "%",
+      "value": 37.5,
+      "type": 7,
+      "id": 5,
+      "sensorIndex": 1,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 5
+    },
+    {
+      "key": "mac:v1:system:memory-active",
+      "label": "Memory active",
+      "unit": "B",
+      "value": 18600000000,
+      "type": 8,
+      "id": 6,
+      "sensorIndex": 1,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 6
+    },
+    {
+      "key": "mac:v1:system:network-receive",
+      "label": "Network receive",
+      "unit": "B/s",
+      "value": 12400000,
+      "type": 8,
+      "id": 7,
+      "sensorIndex": 1,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 7
+    },
+    {
+      "key": "mac:v1:system:disk-root-available",
+      "label": "Startup volume available",
+      "unit": "B",
+      "value": 856000000000,
+      "type": 8,
+      "id": 8,
+      "sensorIndex": 1,
+      "valueMin": null,
+      "valueMax": null,
+      "valueAvg": null,
+      "statistics": "unavailable",
+      "observationTime": 1000,
+      "observationRevision": 8
+    }
+  ],
+  "scenes": [
+    {
+      "id": "reading-0",
+      "kind": "key",
+      "description": "CPU super core 1",
+      "svgSha256": "c745c3c365e270c10cc4c831f96ef088424bb5f550619c75480e68660b2a1a1a"
+    },
+    {
+      "id": "reading-1",
+      "kind": "key",
+      "description": "GPU 1",
+      "svgSha256": "4cf8a6ee73dc9ab3c8a53b905d78aef4aaa2eaac12099ecb3bfb269e1d3a7d47"
+    },
+    {
+      "id": "reading-2",
+      "kind": "key",
+      "description": "Fan 1",
+      "svgSha256": "1b27df0bd3a08dc3a065c4a61e70fbdd0b6aee206e968ac256d7f2024b319c46"
+    },
+    {
+      "id": "reading-3",
+      "kind": "key",
+      "description": "System Total",
+      "svgSha256": "05d14436a88ea583abfa3444b11b9c4ae877c1d227ecc9771257378865e4a5ed"
+    },
+    {
+      "id": "reading-4",
+      "kind": "key",
+      "description": "CPU usage",
+      "svgSha256": "831876b90c141edcc572a368595f34a3df98520390ed9e6388e4204231d4c65e"
+    },
+    {
+      "id": "reading-5",
+      "kind": "key",
+      "description": "Memory active",
+      "svgSha256": "f6a76e786611bd86c38474f60b2d3251bdaf6baa99662cafa028f9c61f1bd648"
+    },
+    {
+      "id": "reading-6",
+      "kind": "key",
+      "description": "Network receive",
+      "svgSha256": "a5841ed4d2bbcac8239099b5dca413c396610831bb1727e66a2e10fd5cc3ad2a"
+    },
+    {
+      "id": "reading-7",
+      "kind": "key",
+      "description": "Startup volume available",
+      "svgSha256": "04929251aeb3c195d6bf026bcd598f621e09e87414409961ba60d1e4154e7920"
+    },
+    {
+      "id": "layout-dual",
+      "kind": "key",
+      "description": "dual layout",
+      "svgSha256": "41b4d40d867b8d1886735b408a01d7af249f2bd94343fafe1b816d4d5414e6d0"
+    },
+    {
+      "id": "layout-triple",
+      "kind": "key",
+      "description": "triple layout",
+      "svgSha256": "19ad44fcdbe42d926fae499237e4365dc812de353eec1ec14a3104a8d99a2f1a"
+    },
+    {
+      "id": "layout-quad",
+      "kind": "key",
+      "description": "quad layout",
+      "svgSha256": "ab35df0880f9b9204613b9102afba3066ab3ca1c413694e00a1e1b1b3f7f59d6"
+    },
+    {
+      "id": "bar",
+      "kind": "key",
+      "description": "CPU activity bar",
+      "svgSha256": "c8725177ba5f0a89bac44ecfa93f85d7f94d8b38e8626a99b14f532bd0c198b0"
+    },
+    {
+      "id": "ring",
+      "kind": "key",
+      "description": "CPU activity ring",
+      "svgSha256": "00165b9de451256cb9f291bff042da6f8b315788567495dbad65600a13d1b166"
+    },
+    {
+      "id": "warn",
+      "kind": "key",
+      "description": "Warning sample",
+      "svgSha256": "1b450c9941e283362af0595832bff0f5458938c514b21021a30555e4af451fb1"
+    },
+    {
+      "id": "crit",
+      "kind": "key",
+      "description": "Critical sample",
+      "svgSha256": "f2309a9c79df3f63040114644a60eb2068c52e476c28dfec21f96c545e8bcf8c"
+    },
+    {
+      "id": "back",
+      "kind": "key",
+      "description": "Configurable Back tile",
+      "svgSha256": "68c69128a4940404cd4bf5a89342b1e154f746a8df15c62b500f93299cfc8c6f"
+    },
+    {
+      "id": "theme-void",
+      "kind": "key",
+      "description": "void theme",
+      "svgSha256": "c745c3c365e270c10cc4c831f96ef088424bb5f550619c75480e68660b2a1a1a"
+    },
+    {
+      "id": "theme-graphite",
+      "kind": "key",
+      "description": "graphite theme",
+      "svgSha256": "8e982a90f2ec991110e124f2af1455cf9df26d5300b8f13dece1c5167979c5bd"
+    },
+    {
+      "id": "theme-ultraviolet",
+      "kind": "key",
+      "description": "ultraviolet theme",
+      "svgSha256": "cfafc66b95dac65cea1610ea5b0d79895d26e100c02b697d04fec3f7a5b542ca"
+    },
+    {
+      "id": "theme-midnight",
+      "kind": "key",
+      "description": "midnight theme",
+      "svgSha256": "a79f6ebe11f53eff8a626068d80c64d2256135948e3a4c67301627826d69af18"
+    },
+    {
+      "id": "theme-forest",
+      "kind": "key",
+      "description": "forest theme",
+      "svgSha256": "742cad907e82cbf5de3d89333eed95aa85eea1bf74d39b84d6503282b20711cb"
+    },
+    {
+      "id": "theme-ember",
+      "kind": "key",
+      "description": "ember theme",
+      "svgSha256": "de749d980885baa31374705bbc873a47d8c477708c52af1e168fccd88061feee"
+    },
+    {
+      "id": "theme-paper",
+      "kind": "key",
+      "description": "paper theme",
+      "svgSha256": "3daabd4f19394700023201c5b6d62c9b4ed8be684c50e654ca3be5fda4e9baed"
+    },
+    {
+      "id": "dial-single",
+      "kind": "dial",
+      "description": "single dial view",
+      "svgSha256": "dddc8f8263904b5044e8690cb3e498393755a0738f52bdf3498dc9076493cc6f"
+    },
+    {
+      "id": "dial-tworow",
+      "kind": "dial",
+      "description": "tworow dial view",
+      "svgSha256": "72b15c00ed92733f251cf2a065b2595d0e4b55fe56836305df86d739004af50c"
+    },
+    {
+      "id": "dial-overview",
+      "kind": "dial",
+      "description": "overview dial view",
+      "svgSha256": "962b1c6dab644c11600647c613ae9ac35ec9a6784372d526c8ce4f185ad88c93"
+    },
+    {
+      "id": "dial-overview-colored",
+      "kind": "dial",
+      "description": "Individual number colors",
+      "svgSha256": "263c15d280bb8ee9c9fc9ee2df9dc939aa99039bcbf317aa4dd1891947b38b33"
+    },
+    {
+      "id": "status-pending",
+      "kind": "key",
+      "description": "pending",
+      "svgSha256": "d862a245c8d4fddb18664ee1838d29a1b218cca5b173731d0870485be0d1b3bd"
+    },
+    {
+      "id": "status-busy",
+      "kind": "key",
+      "description": "busy",
+      "svgSha256": "c7f6939eec0a04ca6b417a581b6cedbad92ff28aeb29a8593bc372f73c32def4"
+    },
+    {
+      "id": "status-no-readable-sensors",
+      "kind": "key",
+      "description": "no-readable-sensors",
+      "svgSha256": "6c64312aabcffc6cd7052f323fef790ae1580fa7866c347d37c7ca909021d40e"
+    },
+    {
+      "id": "status-access-denied",
+      "kind": "key",
+      "description": "access-denied",
+      "svgSha256": "90dc04a55da040b394e07fa31ffd265d9ce6ae68da65489307a1a177e1de0771"
+    },
+    {
+      "id": "status-unsupported-platform",
+      "kind": "key",
+      "description": "unsupported-platform",
+      "svgSha256": "46a341cc0539f26645d8685a163984a4155d2b59a6e5c7677205586c79e51199"
+    },
+    {
+      "id": "status-bridge-failed",
+      "kind": "key",
+      "description": "bridge-failed",
+      "svgSha256": "c64ce52736537b150329cfcb356d1cc794b5e28e977416a65b7c764231776a3a"
+    },
+    {
+      "id": "status-font-missing",
+      "kind": "key",
+      "description": "font-missing",
+      "svgSha256": "f11877af5ebc9c8185748b977305aac0d4607527fde8986018733de8329909ef"
+    },
+    {
+      "id": "status-source-error",
+      "kind": "key",
+      "description": "source-error",
+      "svgSha256": "8b722bd912ab4d5c978015edae4073953b4309fc034cc799980e9cbe510b24ea"
+    },
+    {
+      "id": "status-missing",
+      "kind": "key",
+      "description": "Saved sensor missing",
+      "svgSha256": "9101b8a10cc1cc11e7e7186f859e7b651029431671833cc608328fab9c921125"
+    },
+    {
+      "id": "detail-title",
+      "kind": "key",
+      "description": "Detail page title",
+      "svgSha256": "f55853a739f7a241a7b0496ad1f96d50d298d06e83612b61a0d11ca5602393e1"
+    },
+    {
+      "id": "detail-next",
+      "kind": "key",
+      "description": "Next detail page",
+      "svgSha256": "24aa31bda35f6230b338a856133ea72d283d11e7f9b3e958d700f87fdc0665e9"
+    }
+  ],
+  "assets": [
+    {
+      "file": "readme-hero.png",
+      "width": 1600,
+      "height": 1040,
+      "sha256": "882cc4c83220c204da95bf83936243207dfaff0631bf53092a6bdb29fd91bbd2",
+      "sceneIds": [
+        "theme-void",
+        "theme-graphite",
+        "theme-ultraviolet",
+        "theme-midnight",
+        "theme-forest",
+        "theme-ember",
+        "theme-paper",
+        "layout-quad",
+        "reading-0",
+        "reading-1",
+        "reading-2",
+        "reading-3",
+        "reading-4",
+        "reading-5",
+        "reading-6",
+        "reading-7",
+        "layout-dual",
+        "layout-triple",
+        "ring",
+        "bar",
+        "warn",
+        "crit",
+        "back",
+        "detail-title",
+        "dial-single",
+        "dial-tworow",
+        "dial-overview",
+        "dial-overview-colored"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "hero.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "ccffb53e41dda9188f3dde078c87f2da8efe8a4bab7f57ca8f7dfad1b9b6ef1f",
+      "sceneIds": [
+        "reading-0",
+        "reading-1",
+        "reading-2",
+        "reading-4",
+        "dial-tworow"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "key-layouts.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "81ddcbfdf5d5a1d69857861389ede243c77879b7d47f3ab92a8502a652a57774",
+      "sceneIds": [
+        "reading-0",
+        "layout-dual",
+        "layout-triple",
+        "layout-quad",
+        "bar",
+        "ring",
+        "reading-5",
+        "reading-6"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "details.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "76d1d369b9dc4ac436872a390c8ec4c7a4d944cd8bb619a83a6898a4966b4f56",
+      "sceneIds": [
+        "back",
+        "detail-title",
+        "reading-1",
+        "detail-next",
+        "layout-dual",
+        "layout-triple",
+        "layout-quad",
+        "reading-3"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "dials.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "16ce97a1ea236697fd0581e8142eb3e0dd0255cfd5dd410a6b06847fb4c579be",
+      "sceneIds": [
+        "dial-single",
+        "dial-tworow",
+        "dial-overview"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "themes.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "1d6b21f88aef9a5841b821fe25226c52c3ba7afc01b6c6a74aa24ca7e4099dc9",
+      "sceneIds": [
+        "theme-void",
+        "theme-graphite",
+        "theme-ultraviolet",
+        "theme-midnight",
+        "theme-forest",
+        "theme-ember",
+        "theme-paper"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "alerts.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "cea41b29092abb0f79d99a34cf730973527188b30e0a278d4dc5d475e37686a5",
+      "sceneIds": [
+        "reading-0",
+        "warn",
+        "crit",
+        "bar"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "reading-colors.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "e33bac43cb36b71f2a31f3a8a12a5e0ddcf0457b2c52cd969fd12afd9fd6011b",
+      "sceneIds": [
+        "dial-overview",
+        "dial-overview-colored"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "status.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "db47a2afc2d99a6a4177147b84af0ccbe05fd4e4bac51fb5e61de153feb4e6af",
+      "sceneIds": [
+        "status-pending",
+        "status-busy",
+        "status-missing",
+        "status-no-readable-sensors",
+        "status-access-denied",
+        "status-bridge-failed",
+        "status-font-missing",
+        "status-source-error"
+      ],
+      "kind": "production-rendered sample data"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{"0": {
+    "doc": "Changelog",
+    "title": "Changelog",
+    "content": " ",
+    "url": "/mac-streamdeck/changelog.html",
+    
+    "relUrl": "/changelog.html"
+  },"1": {
+    "doc": "Changelog",
+    "title": "1.0.0.0 - Unreleased",
+    "content": ". | First Mac Sensors preview under development. | Read selected SMC measurements and public system counters without changing hardware settings. | Show readings on keys and dials with themes, graphs, alerts and detail pages. | Available readings vary by Mac and macOS version. Physical Intel and device qualification remain in progress. | . ",
+    "url": "/mac-streamdeck/changelog.html#1000---unreleased",
+    
+    "relUrl": "/changelog.html#1000---unreleased"
+  },"2": {
+    "doc": "Data sources",
+    "title": "Data sources",
+    "content": "Mac Sensors reads local macOS interfaces. Public system counters publish independently of optional SMC readings, so a slow or missing sensor group cannot make an old value look new. | Reading family | What it means | . | CPU activity | Change in CPU tick counters across observations | . | Memory | Named Mach VM page counts, plus total memory and swap use | . | Startup volume | Total and available space reported for the root filesystem | . | Network | Aggregate byte-rate deltas across eligible Ethernet/Wi-Fi interfaces | . | Storage | Aggregate byte-rate deltas from eligible block-storage drivers | . | SMC | Bounded, typed read-only temperature, fan, power and related keys | . On the measured Mac17,9 with an M5 Pro, the current catalog contains 38 SMC readings and 14 public/derived readings after baselines are established. Another Mac may expose a different set. The first sample, counter resets, interface membership changes and sleep gaps withhold rates until there is a new baseline. Memory categories are the named kernel counters. Their sum is not presented as Activity Monitor’s Memory Used. Aggregate storage and network rates are not per-application traffic. CPU/GPU clocks, unqualified private GPU usage and ambiguous HID/IOReport channels are not offered in this release. An interface exposing bytes does not establish a sensor’s meaning. Unknown model/chip pairs do not receive the measured M5-specific table. Successful typed zero values remain zero. An unchanged value can be a genuine new measurement. Failed readings disappear immediately; pending observations expire after 15 seconds. An internally frozen hardware register cannot be identified from an unchanged successful read alone. Saved SMC identities include the model, key bytes and a semantic revision. A changed catalog order cannot retarget a saved key. Source layout, labels and build numbers are not used as measurement identity. ",
+    "url": "/mac-streamdeck/data-sources.html",
+    
+    "relUrl": "/data-sources.html"
+  },"3": {
+    "doc": "Dial controls and presets",
+    "title": "Dial controls and presets",
+    "content": "Choose a control preset in the Sensor Dial panel. The visible gesture map explains what turns, pressed turns, short presses, long presses and touch regions do. Legacy keeps the basic reading-cycle and session-stat controls. Elite adds group-oriented controls. Custom exposes individual assignments and preserves choices you already made. Switching from Elite to Custom seeds the Elite map for settings you have not changed. Touch-zone choices matter. The panel explains when a gesture assignment cannot fire in the selected layout, rather than promising a control the surface cannot deliver. A Control action can send a command to a Sensor Dial from a key. Select its target and command in the panel. It changes the plugin’s display or local session state; it does not control hardware or a fan. Software gesture traces are tested. Device gestures and arm’s-length legibility remain explicit physical checks in hardware compatibility. ",
+    "url": "/mac-streamdeck/dial-controls.html",
+    
+    "relUrl": "/dial-controls.html"
+  },"4": {
+    "doc": "FAQ and privacy",
+    "title": "FAQ and privacy",
+    "content": " ",
+    "url": "/mac-streamdeck/faq.html",
+    
+    "relUrl": "/faq.html"
+  },"5": {
+    "doc": "FAQ and privacy",
+    "title": "Does it control my fans?",
+    "content": "No. It exposes no hardware setter, fan control, privileged helper or background service. The SMC transport accepts read and metadata operations only. ",
+    "url": "/mac-streamdeck/faq.html#does-it-control-my-fans",
+    
+    "relUrl": "/faq.html#does-it-control-my-fans"
+  },"6": {
+    "doc": "FAQ and privacy",
+    "title": "Why is a reading missing?",
+    "content": "The selected Mac may not expose it, its meaning may be unqualified, or a read may have failed or expired. The saved identity is retained. The plugin does not replace it with the nearest name or list position. ",
+    "url": "/mac-streamdeck/faq.html#why-is-a-reading-missing",
+    
+    "relUrl": "/faq.html#why-is-a-reading-missing"
+  },"7": {
+    "doc": "FAQ and privacy",
+    "title": "Why does a key statistic show N/A?",
+    "content": "Provider-wide historical statistics are unavailable. Key MIN, MAX and AVG stay N/A. Dial statistics are local to the current session and use genuine observations. ",
+    "url": "/mac-streamdeck/faq.html#why-does-a-key-statistic-show-na",
+    
+    "relUrl": "/faq.html#why-does-a-key-statistic-show-na"
+  },"8": {
+    "doc": "FAQ and privacy",
+    "title": "Can I keep settings from another computer?",
+    "content": "Themes, display choices and alerts can be carried in a configuration document. A reading that does not exist on this Mac shows Sensor missing. Unknown fields and a saved alternative font choice remain in the document. No silent rebinding or migration is performed. ",
+    "url": "/mac-streamdeck/faq.html#can-i-keep-settings-from-another-computer",
+    
+    "relUrl": "/faq.html#can-i-keep-settings-from-another-computer"
+  },"9": {
+    "doc": "FAQ and privacy",
+    "title": "Privacy",
+    "content": "The plugin runs on the Mac and reads hardware/system values through local macOS interfaces. Settings live in the Stream Deck app. It makes no internet requests, has no telemetry or advertising, and has no update channel of its own. The SDK communicates with the local Stream Deck app over its loopback WebSocket. A support report contains runtime versions, model/chip information and catalog summary. It excludes user names, serial numbers, hardware UUIDs, raw device identifiers and sensor values. You choose when to copy and share it. Diagnostic tracing is opt-in development work, not telemetry. ",
+    "url": "/mac-streamdeck/faq.html#privacy",
+    
+    "relUrl": "/faq.html#privacy"
+  },"10": {
+    "doc": "FAQ and privacy",
+    "title": "How do updates arrive?",
+    "content": "Through the GitHub release page or the Elgato Marketplace when available. The plugin does not download its own updates. ",
+    "url": "/mac-streamdeck/faq.html#how-do-updates-arrive",
+    
+    "relUrl": "/faq.html#how-do-updates-arrive"
+  },"11": {
+    "doc": "Getting started",
+    "title": "Getting started",
+    "content": "Drag Sensor Reading onto a key. In Reading, type part of a sensor or reading name and choose the result. Arrow keys browse the picker; Enter selects. Browsing and opening the panel do not save a new reading. The header shows the same SVG the plugin last drew for that action. Its status distinguishes live data, a missing saved reading and an unavailable source. A missing reading stays saved with its label and colors. Choose a label if the full sensor name is too long for the key. Under Readings on this key, choose one, two, three or four readings. Set Graph under the value for a trend, bar or ring where that layout supports it. Read every is shared under Advanced. The default is one second; the shortest interval is 250 ms. Reading age still has a 15-second limit, so a long chosen interval can leave a value expired before the next poll. Choose an interval appropriate for what you want to watch. Use thresholds for warning and critical colors. Use sensor details when you want a group of readings behind one key. Settings-panel capture of the staged Mac panel in a simulated host with sample data. ",
+    "url": "/mac-streamdeck/getting-started.html",
+    
+    "relUrl": "/getting-started.html"
+  },"12": {
+    "doc": "Hardware compatibility",
+    "title": "Hardware compatibility",
+    "content": "These are measured facts and explicit gaps, not a list of every Mac that might work. | Environment | Evidence | . | Mac17,9, M5 Pro, 64 GB, macOS 27.0.1 | Live public/SMC reads, native and provider tests, actual app installation and active qualification | . | Stream Deck 7.5.0.22885, app Node 24.13.1 | Browser/Finder package install, upgrade and isolated development link | . | Virtual Stream Deck, 8 by 4 | Real-app reading publication and visible-reference lifecycle | . | x86_64 Node under Rosetta on the M5 Pro | Same-artifact ABI and live reads on Node 20, 22 and 24 | . | Hosted arm64 and Intel macOS runners | Clean software qualification and the same-artifact ABI matrix | . | Physical Intel Mac | Not executed; separate owner session required | . | Physical keys, dials and touch | Not executed in this session; owner device checks required | . The package targets macOS 13.5 or later and app 7.1 or later. Older supported OS versions are deployment targets, not measured rows. Intel hardware support is limited to macOS 26 and earlier and remains subject to the app’s own requirements. Sensor availability varies by model. A fanless Mac need not have fan rows. Discrete-GPU power-off behavior on a two-GPU Intel laptop is not yet physically qualified. The app’s Qt 6.11.1 renderer was used for the face census. Physical photograph calibration remains pending, so device-equivalence and legibility claims are marked INFERRED. The hardware photograph will be added after the owner captures the prepared scene. See performance evidence for measured windows and their limits. ",
+    "url": "/mac-streamdeck/hardware.html",
+    
+    "relUrl": "/hardware.html"
+  },"13": {
+    "doc": "Home",
+    "title": "Your Mac, on your keys and dials",
+    "content": "Mac Sensors puts read-only hardware and system readings on Stream Deck. Choose a reading, give it the space it needs, and keep its current value in view. Production-rendered sample data using labels from a measured Mac catalog. Use one key for a large number, two to four readings together, or a dial for a reading set with local session statistics. Open sensor details when one key needs more room. Themes, thresholds and sparklines share the same drawing rules across layouts. Start with installation and requirements, then pick your first reading. Hardware compatibility separates measured results from unexecuted physical checks. The plugin reads. It does not write sensor registers, control fans, install a privileged helper, or send telemetry. ",
+    "url": "/mac-streamdeck/#your-mac-on-your-keys-and-dials",
+    
+    "relUrl": "/#your-mac-on-your-keys-and-dials"
+  },"14": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/mac-streamdeck/",
+    
+    "relUrl": "/"
+  },"15": {
+    "doc": "Installation and requirements",
+    "title": "Installation and requirements",
+    "content": "You need macOS 13.5 or later and Stream Deck 7.1 or later. The package includes arm64 and x86_64 readers and requests the app’s Node 24 runtime. No separate sensor application is required. | Download the .streamDeckPlugin file from the GitHub releases page. | Open the downloaded file in Finder and choose Install in Stream Deck. | Find Mac Sensors in the Actions list and drag Sensor Reading onto a key. | Pick a reading in the settings panel. | . Version 1.0.0.0 is being qualified. The repository and its release downloads currently require access. Marketplace availability is separate. Tahoma Bold must be available in Font Book. If a key says Tahoma needed, open Font Book, install or download the available Tahoma family, and choose Check again in the panel. The plugin includes rendered setup artwork, not a font file. The binary deployment floor is not a claim that every Mac or older OS combination was tested. Consult the measured compatibility table. Sensor availability depends on the model and macOS interfaces. For updates, open a newer package normally. Equal versions may be ignored by the app. Keep a profile backup before development replacement or uninstall work. Removing the plugin does not require removing your profiles. ",
+    "url": "/mac-streamdeck/installation.html",
+    
+    "relUrl": "/installation.html"
+  },"16": {
+    "doc": "Sensor details",
+    "title": "Sensor details",
+    "content": "Set a reading key’s Press behavior to open sensor details. The plugin switches to a managed profile with room for the reading’s group or a custom list. Production-rendered sample data showing detail cells and a Back tile. The Back tile is a real configurable reading key. You can choose its reading, layout, label and look. Pressing it always returns to the previous profile. A second Back tile mirrors the opener’s position by default where the layout supports it. A custom list can mix single, dual, triple and quad tiles. Grouping is positional: readings flow through the tile sizes in list order. Renames and colors travel with their reading when moved. Managed profiles use a current revision for each supported grid. Development links do not automatically install those bundled profiles. If a detail switch does nothing in a dev setup, install the matching prepared profile first. Physical install and navigation checks are listed separately in compatibility. A missing reading does not silently bind to another sensor. Repair its selection in the panel or wait for the same identity to become available again. ",
+    "url": "/mac-streamdeck/sensor-details.html",
+    
+    "relUrl": "/sensor-details.html"
+  },"17": {
+    "doc": "Sensor Dial",
+    "title": "Sensor Dial",
+    "content": "Put Sensor Dial on an encoder to keep one reading or a set within reach. Its views show one reading, two rows or an overview. Production-rendered sample data with local session statistics. Rotation moves through the saved readings or groups. Missing members stay saved and are skipped until available. A label belongs to the saved reading and stays with it through a reorder. The dial’s min, max and average are local session statistics from genuine observations. They reset with the session or a reset command. A repeated display of the same observation does not count as another sample; a new acquisition with the same value does. Individual reading colors change numeric fills while preserving labels, units, graph paths, selection and layout. Warning and critical colors still win. See themes and controls and presets. Physical rotate, push, touch and long-touch validation requires a deck with encoders. The current software and Virtual Stream Deck evidence does not substitute for that check. Settings-panel capture, panel build 1.0.0.0-mac7. Simulated host with sample data. Production-rendered sample data. The comparison changes number colors and preserves geometry. Settings-panel capture of individual reading colors. Simulated host with sample data. ",
+    "url": "/mac-streamdeck/sensor-dial.html",
+    
+    "relUrl": "/sensor-dial.html"
+  },"18": {
+    "doc": "Sensor Reading",
+    "title": "Sensor Reading",
+    "content": "A reading key can show one large value, two stacked readings, three compact rows, or four color-coded cells. Labels and numbers fit measured Tahoma ink bounds. Production-rendered sample data. The same Mac catalog labels appear in each layout. Choose each reading separately. A custom label changes its presentation, not its identity. Unknown settings from a newer version remain in the saved document. The normal press cycles the key’s selected statistic. Mac provider history is unavailable, so MIN, MAX and AVG show N/A instead of substituting the current value. Dial session statistics are a separate local feature. One-reading keys can show a sparkline, bar or ring. A sparkline records genuine accepted observations while the action is visible. It is not a stored long-term history. Percentages use their fixed domain. Other bar and ring bounds follow observed values and include the configured threshold zones. Warning and critical colors take priority over theme and custom text colors. Temperature conversion affects the displayed unit and threshold interpretation together. ",
+    "url": "/mac-streamdeck/sensor-reading.html",
+    
+    "relUrl": "/sensor-reading.html"
+  },"19": {
+    "doc": "Status screens",
+    "title": "Status screens",
+    "content": "Status text names the condition the plugin can establish. Opening a provider does not make a value live. Production-rendered sample scenarios. | Screen | Meaning and next step | . | Reading sensors | The first successful sample has not arrived yet | . | Source busy | A source is still occupied; the plugin retries | . | No sensor data | No recent readable observations; copy a support report | . | Sensor missing | The saved identity is absent; settings remain saved | . | Access denied | macOS denied a read; copy a support report | . | Needs macOS | The runtime does not meet the supported platform requirements | . | Bridge failed | The native reader could not load; reinstall and copy a report if it persists | . | Tahoma needed | Install Tahoma Bold in Font Book, then choose Check again | . | Source error | A source failed without a more specific established cause | . | Not updating | No recent measurement is available | . Check again requests another eligible read. Automatic catalog refresh updates the picker when independently arriving sources change its membership. It does not accelerate the hardware polling cadence. The fixed Tahoma setup image stays legible when the font is missing. It contains rendered pixels and keeps the Back mark where needed. ",
+    "url": "/mac-streamdeck/status-screens.html",
+    
+    "relUrl": "/status-screens.html"
+  },"20": {
+    "doc": "Themes and colors",
+    "title": "Themes and colors",
+    "content": "Choose Void, Graphite, Ultraviolet, Midnight, Forest, Ember or Paper. A key or dial can follow the shared theme or keep a local choice. Production-rendered sample data using the same reading in each theme. Make shared makes the selected theme the shared default, then returns that action to following it. The panel says what changed and keeps a newer choice if one arrived while the shared settings were being saved. Text can use the theme, dimmed text or a custom color. Type accents are optional. Per-reading colors can make a rotation set easier to follow, while warning and critical colors keep priority. Tahoma Bold is the first release’s face font. A saved alternative font setting is kept in the configuration document and identified as kept; faces use Tahoma. No second font selector is shown. Unknown theme names from a newer version remain saved. The panel names the fallback it draws until you choose a known theme. ",
+    "url": "/mac-streamdeck/themes.html",
+    
+    "relUrl": "/themes.html"
+  },"21": {
+    "doc": "Thresholds and alerts",
+    "title": "Thresholds and alerts",
+    "content": "Set warning and critical values for a reading. Choose the below-threshold direction when a low value is the problem. Thresholds use the displayed temperature unit when Fahrenheit is enabled. Production-rendered sample data. Warning and critical colors are fixed. Warnings use #E8940D and critical alerts use #CB2114. Alert colors override themes and custom numeric colors. Gauge zones are muted the same way they are on the device. Pick thresholds for the specific quantity and Mac. A temperature threshold cannot describe fan speed, power or storage capacity. The plugin does not offer a universal hardware safety limit. In a detail view, ordinary reading slots use their own reading and do not inherit a temperature alert rule from an unrelated opener. The Back tile represents the opener and keeps its alert presentation. Dial thresholds are action settings. For a rotation set that mixes units, leave thresholds unset or use separate dials with limits suited to each quantity. Alerts change what the plugin draws. They do not change fan speed, power limits or any sensor register. ",
+    "url": "/mac-streamdeck/thresholds.html",
+    
+    "relUrl": "/thresholds.html"
+  },"22": {
+    "doc": "Troubleshooting",
+    "title": "Troubleshooting",
+    "content": "Start with the panel’s status message. Check again requests a new check while the action is visible. A missing selected reading stays saved, so a temporary absence does not rewrite the profile. For Bridge failed, reinstall the package from the release page. The reader validates the selected native file’s bytes, architecture and protocol before loading it. A load failure alone does not identify a signing or permission cause. For Tahoma needed, install or download Tahoma Bold through Font Book and choose Check again. Do not remove system fonts to test recovery. If a detail key does not switch profiles, confirm the matching managed profile is installed. Development links need a separate profile installation. Keep a profile backup before reinstalling or replacing development files. ",
+    "url": "/mac-streamdeck/troubleshooting.html",
+    
+    "relUrl": "/troubleshooting.html"
+  },"23": {
+    "doc": "Troubleshooting",
+    "title": "Copy a support report",
+    "content": "Open Advanced, then Support, and choose Copy support report. Include the exact status, what action you were using, app/macOS versions and whether the package came from GitHub or the Marketplace. Review the report before posting it. Report bugs through GitHub Issues. Report security issues privately using the repository’s security reporting route rather than a public issue. Do not overwrite a loaded native addon. Stop the specific development instance, replace files by copy and rename, then restart that plugin and verify its hashes. Developer instrumentation uses the MACSENSORS_ prefix; normal use needs no environment settings. ",
+    "url": "/mac-streamdeck/troubleshooting.html#copy-a-support-report",
+    
+    "relUrl": "/troubleshooting.html#copy-a-support-report"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "command": "npm run docs:assets",
   "renderer": {
     "name": "Installed app QtSvg through a measured local adapter",
@@ -16,12 +16,12 @@
       "unit": "°C",
       "value": 62.4,
       "type": 1,
-      "id": 1,
+      "id": 0,
       "sensorIndex": 0,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "valueMin": 39.936,
+      "valueMax": 63.70518279611625,
+      "valueAvg": 51.29453427750151,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 1
     },
@@ -31,12 +31,12 @@
       "unit": "°C",
       "value": 54.8,
       "type": 1,
-      "id": 2,
-      "sensorIndex": 0,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 1,
+      "valueMin": 36.2,
+      "valueMax": 57.3,
+      "valueAvg": 46.1,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 2
     },
@@ -46,12 +46,12 @@
       "unit": "RPM",
       "value": 1820,
       "type": 3,
-      "id": 3,
-      "sensorIndex": 0,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 5,
+      "valueMin": 1190,
+      "valueMax": 2160,
+      "valueAvg": 1610,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 3
     },
@@ -61,12 +61,12 @@
       "unit": "W",
       "value": 38.6,
       "type": 5,
-      "id": 4,
-      "sensorIndex": 0,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 6,
+      "valueMin": 9.8,
+      "valueMax": 64.2,
+      "valueAvg": 27.4,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 4
     },
@@ -76,12 +76,12 @@
       "unit": "%",
       "value": 37.5,
       "type": 7,
-      "id": 5,
-      "sensorIndex": 1,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 0,
+      "valueMin": 2.6,
+      "valueMax": 91.4,
+      "valueAvg": 23.8,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 5
     },
@@ -91,12 +91,12 @@
       "unit": "B",
       "value": 18600000000,
       "type": 8,
-      "id": 6,
-      "sensorIndex": 1,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 2,
+      "valueMin": 15200000000,
+      "valueMax": 19300000000,
+      "valueAvg": 17400000000,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 6
     },
@@ -106,12 +106,12 @@
       "unit": "B/s",
       "value": 12400000,
       "type": 8,
-      "id": 7,
-      "sensorIndex": 1,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 4,
+      "valueMin": 1200,
+      "valueMax": 46800000,
+      "valueAvg": 3900000,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 7
     },
@@ -121,12 +121,12 @@
       "unit": "B",
       "value": 856000000000,
       "type": 8,
-      "id": 8,
-      "sensorIndex": 1,
-      "valueMin": null,
-      "valueMax": null,
-      "valueAvg": null,
-      "statistics": "unavailable",
+      "id": 0,
+      "sensorIndex": 3,
+      "valueMin": 853400000000,
+      "valueMax": 856200000000,
+      "valueAvg": 855100000000,
+      "statistics": "producer",
       "observationTime": 1000,
       "observationRevision": 8
     }
@@ -313,12 +313,6 @@
       "svgSha256": "6c64312aabcffc6cd7052f323fef790ae1580fa7866c347d37c7ca909021d40e"
     },
     {
-      "id": "status-access-denied",
-      "kind": "key",
-      "description": "access-denied",
-      "svgSha256": "90dc04a55da040b394e07fa31ffd265d9ce6ae68da65489307a1a177e1de0771"
-    },
-    {
       "id": "status-unsupported-platform",
       "kind": "key",
       "description": "unsupported-platform",
@@ -346,19 +340,193 @@
       "id": "status-missing",
       "kind": "key",
       "description": "Saved sensor missing",
-      "svgSha256": "9101b8a10cc1cc11e7e7186f859e7b651029431671833cc608328fab9c921125"
+      "svgSha256": "1aa7b37db36ec4bcaa650924f72a40b28bb01412e3ce530dfa27585ff4476098"
     },
     {
-      "id": "detail-title",
+      "id": "detail-page-back",
       "kind": "key",
-      "description": "Detail page title",
-      "svgSha256": "f55853a739f7a241a7b0496ad1f96d50d298d06e83612b61a0d11ca5602393e1"
+      "description": "Detail page back tile",
+      "svgSha256": "68c69128a4940404cd4bf5a89342b1e154f746a8df15c62b500f93299cfc8c6f"
     },
     {
-      "id": "detail-next",
+      "id": "detail-page-title",
       "kind": "key",
-      "description": "Next detail page",
-      "svgSha256": "24aa31bda35f6230b338a856133ea72d283d11e7f9b3e958d700f87fdc0665e9"
+      "description": "Detail page title tile",
+      "svgSha256": "0af25f2d8b71068127989350d21de223d02bdc41bb2312f1e67f4c37f7f95c59"
+    },
+    {
+      "id": "detail-page-tile-0",
+      "kind": "key",
+      "description": "Detail page reading tile: GPU 1",
+      "svgSha256": "c3467df56ab571a4948bb1417e02dd620ad61800d998d9c64d7e52398588cabc"
+    },
+    {
+      "id": "detail-page-tile-1",
+      "kind": "key",
+      "description": "Detail page reading tile: Fan 1",
+      "svgSha256": "beb1c1e8058cb809efb4571f9de13022a7b48ce700d5cf8ea3350e7cd9afd7c7"
+    },
+    {
+      "id": "detail-page-tile-2",
+      "kind": "key",
+      "description": "Detail page reading tile: System Total",
+      "svgSha256": "9d35b0c60589b659b75fb9b36ee0b4499ecd109fa39ed5d203ee330abd7cf651"
+    },
+    {
+      "id": "detail-page-previous",
+      "kind": "key",
+      "description": "Detail page previous tile",
+      "svgSha256": "5684d1114fe9e3aae7a7900203beb3d6f042da33c0123bfee45c435dae6b28d1"
+    },
+    {
+      "id": "detail-page-tile-3",
+      "kind": "key",
+      "description": "Detail page reading tile: CPU usage",
+      "svgSha256": "9b649ab33f9b53ba3756aae45cb904a57401cfe2e0ca47de36611fc21e50c5bb"
+    },
+    {
+      "id": "detail-page-tile-4",
+      "kind": "key",
+      "description": "Detail page reading tile: Memory active",
+      "svgSha256": "62276f9b41f6397f74e7ebb17a306252b200bc4dcabd32a7057cd408945697dd"
+    },
+    {
+      "id": "detail-page-tile-5",
+      "kind": "key",
+      "description": "Detail page reading tile: Network receive",
+      "svgSha256": "d65f4d9c6add8520a5012affa22daa9d128e0294a89458a5addcb0fe80ce20d3"
+    },
+    {
+      "id": "detail-page-tile-6",
+      "kind": "key",
+      "description": "Detail page reading tile: Startup volume available",
+      "svgSha256": "cbbb230dd83e5ceb1f829f719cfae69fa09189ce464838ca7a883e0e9e2060f5"
+    },
+    {
+      "id": "detail-page-next",
+      "kind": "key",
+      "description": "Detail page next tile",
+      "svgSha256": "0cff35be96661cbbb34ccbe63e02738eaf4503259e070547535853c4033e1144"
+    },
+    {
+      "id": "detail-page-tile-7",
+      "kind": "key",
+      "description": "Detail page empty tile",
+      "svgSha256": "40d2f723e988fab50c7dd4048cda36cae8b0f0c3e46d14d4895cdc2f1cd8229a"
+    },
+    {
+      "id": "detail-page-tile-8",
+      "kind": "key",
+      "description": "Detail page empty tile",
+      "svgSha256": "40d2f723e988fab50c7dd4048cda36cae8b0f0c3e46d14d4895cdc2f1cd8229a"
+    },
+    {
+      "id": "detail-page-tile-9",
+      "kind": "key",
+      "description": "Detail page empty tile",
+      "svgSha256": "40d2f723e988fab50c7dd4048cda36cae8b0f0c3e46d14d4895cdc2f1cd8229a"
+    },
+    {
+      "id": "detail-page-tile-10",
+      "kind": "key",
+      "description": "Detail page empty tile",
+      "svgSha256": "40d2f723e988fab50c7dd4048cda36cae8b0f0c3e46d14d4895cdc2f1cd8229a"
+    },
+    {
+      "id": "accent-reading-0",
+      "kind": "key",
+      "description": "CPU super core 1, accents by sensor type",
+      "svgSha256": "ddc69a63e0ca7682cd338ba7921f53e78ad1eff658cab7076fdcfa811960dfc7"
+    },
+    {
+      "id": "accent-reading-1",
+      "kind": "key",
+      "description": "GPU 1, accents by sensor type",
+      "svgSha256": "116b5061969dbe97664c8316b9904ef00ec88e2de09144c704da7a0810753800"
+    },
+    {
+      "id": "accent-reading-2",
+      "kind": "key",
+      "description": "Fan 1, accents by sensor type",
+      "svgSha256": "22a32b872a8c407462124158006a15934894d794cf27b278bad3e644ec31fa0e"
+    },
+    {
+      "id": "accent-reading-3",
+      "kind": "key",
+      "description": "System Total, accents by sensor type",
+      "svgSha256": "749641c33e5433d87694665065590b3a6885bc7f0022087eeee15628f5c82d27"
+    },
+    {
+      "id": "accent-reading-4",
+      "kind": "key",
+      "description": "CPU usage, accents by sensor type",
+      "svgSha256": "b8605421dfb8e631e16c36362ac11069800c4367ed6b6c4902626a45a7dc8543"
+    },
+    {
+      "id": "accent-reading-5",
+      "kind": "key",
+      "description": "Memory active, accents by sensor type",
+      "svgSha256": "a5994901b9e5c77d0069d5187300302b628aa3e3b9bafd7aa17b4d17b23fe14d"
+    },
+    {
+      "id": "accent-reading-6",
+      "kind": "key",
+      "description": "Network receive, accents by sensor type",
+      "svgSha256": "ef7f76751a3dbc2bd52db744e3649e462797e1146426a127f225a763abd18de3"
+    },
+    {
+      "id": "accent-reading-7",
+      "kind": "key",
+      "description": "Startup volume available, accents by sensor type",
+      "svgSha256": "04929251aeb3c195d6bf026bcd598f621e09e87414409961ba60d1e4154e7920"
+    },
+    {
+      "id": "stat-single-current",
+      "kind": "key",
+      "description": "CPU super 1, current",
+      "svgSha256": "c745c3c365e270c10cc4c831f96ef088424bb5f550619c75480e68660b2a1a1a"
+    },
+    {
+      "id": "stat-dual-current",
+      "kind": "key",
+      "description": "Dual layout, current",
+      "svgSha256": "41b4d40d867b8d1886735b408a01d7af249f2bd94343fafe1b816d4d5414e6d0"
+    },
+    {
+      "id": "stat-single-min",
+      "kind": "key",
+      "description": "CPU super 1, min",
+      "svgSha256": "684bf3d4287004df2fe981ca54ff3ed453dd0d0dab487fd8d142b1789f5c5662"
+    },
+    {
+      "id": "stat-dual-min",
+      "kind": "key",
+      "description": "Dual layout, min",
+      "svgSha256": "b890953253d45453548ed4b5c4e61e0301488a82dac58c14aa023ad64776c69a"
+    },
+    {
+      "id": "stat-single-max",
+      "kind": "key",
+      "description": "CPU super 1, max",
+      "svgSha256": "83db93a49ad4081d53af98fa96b8375e98bcf8f0233c248d1a8d5eb8d74940bc"
+    },
+    {
+      "id": "stat-dual-max",
+      "kind": "key",
+      "description": "Dual layout, max",
+      "svgSha256": "a1f450521040ecba0f3ebdcdb4929dff671ff8cb64aec0fc360f8d5c72b229bf"
+    },
+    {
+      "id": "stat-single-avg",
+      "kind": "key",
+      "description": "CPU super 1, avg",
+      "svgSha256": "61d0c2cf73c2072f3156dfe834a45732c0dea044f272bd13c2645f5ae96a8a87"
+    },
+    {
+      "id": "stat-dual-avg",
+      "kind": "key",
+      "description": "Dual layout, avg",
+      "svgSha256": "ec8d48d7141859d9fa59782d5022e8400b6d76def325e2db80c5c26704ac1325"
     }
   ],
   "assets": [
@@ -366,7 +534,7 @@
       "file": "readme-hero.png",
       "width": 1600,
       "height": 1040,
-      "sha256": "882cc4c83220c204da95bf83936243207dfaff0631bf53092a6bdb29fd91bbd2",
+      "sha256": "3dfa311beb470d148a47ac10748593ca4eac910ea4751f7b310129fd7c24b20b",
       "sceneIds": [
         "theme-void",
         "theme-graphite",
@@ -391,7 +559,7 @@
         "warn",
         "crit",
         "back",
-        "detail-title",
+        "detail-page-title",
         "dial-single",
         "dial-tworow",
         "dial-overview",
@@ -434,16 +602,23 @@
       "file": "details.png",
       "width": 1280,
       "height": 720,
-      "sha256": "76d1d369b9dc4ac436872a390c8ec4c7a4d944cd8bb619a83a6898a4966b4f56",
+      "sha256": "23eecc91d7d359bc455cc71d228cc989264cb2eba0f69ff99d8c390363c4fc1c",
       "sceneIds": [
-        "back",
-        "detail-title",
-        "reading-1",
-        "detail-next",
-        "layout-dual",
-        "layout-triple",
-        "layout-quad",
-        "reading-3"
+        "detail-page-back",
+        "detail-page-title",
+        "detail-page-tile-0",
+        "detail-page-tile-1",
+        "detail-page-tile-2",
+        "detail-page-previous",
+        "detail-page-tile-3",
+        "detail-page-tile-4",
+        "detail-page-tile-5",
+        "detail-page-tile-6",
+        "detail-page-next",
+        "detail-page-tile-7",
+        "detail-page-tile-8",
+        "detail-page-tile-9",
+        "detail-page-tile-10"
       ],
       "kind": "production-rendered sample data"
     },
@@ -503,16 +678,49 @@
       "file": "status.png",
       "width": 1280,
       "height": 720,
-      "sha256": "db47a2afc2d99a6a4177147b84af0ccbe05fd4e4bac51fb5e61de153feb4e6af",
+      "sha256": "a082612b689d7cf28458dea19a43e24564bfcbff7373312c8f31e9793eebade6",
       "sceneIds": [
         "status-pending",
         "status-busy",
         "status-missing",
         "status-no-readable-sensors",
-        "status-access-denied",
         "status-bridge-failed",
         "status-font-missing",
         "status-source-error"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "accents.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "00da9411d661c3e6bc7c1c076f13c017e35c52b42a45ebf25a0b8b21fc08a4da",
+      "sceneIds": [
+        "accent-reading-0",
+        "accent-reading-1",
+        "accent-reading-2",
+        "accent-reading-3",
+        "accent-reading-4",
+        "accent-reading-5",
+        "accent-reading-6",
+        "accent-reading-7"
+      ],
+      "kind": "production-rendered sample data"
+    },
+    {
+      "file": "stat-modes.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "49a226a3bcea695af78d580cf2322a63f726a6ae3b3509f6877191a297229974",
+      "sceneIds": [
+        "stat-single-current",
+        "stat-single-min",
+        "stat-single-max",
+        "stat-single-avg",
+        "stat-dual-current",
+        "stat-dual-min",
+        "stat-dual-max",
+        "stat-dual-avg"
       ],
       "kind": "production-rendered sample data"
     }

@@ -1,25 +1,25 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scope": "Staged Mac panel in Chromium, simulated host; not the app webview",
   "sourceSha256": {
-    "ui/control.html": "0eea918520440cd6f023d19c8cb42fdcb43f054a6f31f5037515777ed14d94bc",
-    "ui/detail-slot.html": "00e0855fcf42ed9801c38685d3f51be48945ff5d4e1bd5dafc02108a54446581",
+    "ui/control.html": "c69b98d0f915b26694a406ac6e77793676225ddbf870aa3aeefb2ca10d1eefee",
+    "ui/detail-slot.html": "3c19a5e481b20a5da60db4f476facc34d83113ce0fbd07417ef5d68e0b4471b9",
     "ui/pi-command.js": "a672b467fa4d6950bbae85ea59006c0a0185f6b2c9b366ad6e29340c19d6b62a",
-    "ui/pi-common.js": "9ffa7f6f34804aac075582d22a78b63198eb6fd4c86913318b73d7a388069e72",
+    "ui/pi-common.js": "97e429a2ff6b01d5d71c008ed8173d645650c83fdbc0dc35add358c42b4bfb86",
     "ui/pi-control.js": "2a83b53d7c0f4cf6aca9216c5f0fc4001327f05b05e3c2b4282a0ad7083df18a",
-    "ui/pi-model.js": "97ee07dc6e3a47c5ada50778a552c06d99fc5eea4cc8a2f6a8c50852b93185d9",
-    "ui/pi-shell.js": "49b79ee65e882eac26253dfb0e44e46ca51ce1ef80b2c3cd7b2af4d87724beb9",
+    "ui/pi-model.js": "c9732cb2d91c9cfef8f6552eaecc0a72f4efff9fd6e25e2922b18f3decb39632",
+    "ui/pi-shell.js": "6427c97286c2a39463a5138af22d188b180940dfb6c04fa096ab24200d1e77d3",
     "ui/pi-slot.js": "c07cd26a8d46a824c5440bb487d731bef0426f14d76ccea034b0669cab931337",
     "ui/pi.css": "51f44aeed25c6c0b56940a2079da5692547b48212f0d60efb820e885eb80d165",
     "ui/sdpi-components.js": "f6c0dfd2ed68e18084b9952842b86e3850cf837d674704700c2a0718e0a24f6b",
-    "ui/sensor-dial.html": "6596938bca9ad7aaffbe4d06b6439f8b5d51cb6837583d09345b2458c7a3a01b",
-    "ui/sensor-reading.html": "fd7f544c6a0576c6982aa2c534b335c2b79ba6e616d2205f1c06eed0cbaacfed"
+    "ui/sensor-dial.html": "cdcf184026cea268c4f7d072174e65bbfdb4d4ef52698b202950af70e69618df",
+    "ui/sensor-reading.html": "59e15c5676d25cc67ce4a16777aa2c8ea3769abe625eb98130a4352604f8d9e6"
   },
   "captures": [
     {
       "file": "settings-key.png",
       "kind": "settings-panel capture, simulated host, sample data",
-      "sha256": "2cb000e235224a20e694ceb3e4be7633df7b6740bec819b444ccd751e0c5074f",
+      "sha256": "62aa7f1c18218b4e13aaddd36bc440deeda0fa3b899f9289fb20110282113eb3",
       "settings": {
         "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
         "label": "CPU super 1",
@@ -28,7 +28,7 @@
         "warnValue": "75",
         "critValue": "90"
       },
-      "build": "1.0.0.0-mac7",
+      "build": "1.0.1.0-mac7",
       "width": 378,
       "dpr": 2,
       "overflow": 0
@@ -36,7 +36,7 @@
     {
       "file": "settings-dial.png",
       "kind": "settings-panel capture, simulated host, sample data",
-      "sha256": "0f115f5243a653c69fd579b7dfa56fd64946f6a14a220bcfb55470afb345eb82",
+      "sha256": "6014f4d5e090bc20736776c31a830ac6d39697b0666599ae9a2cf744ba603dbc",
       "settings": {
         "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
         "label": "CPU super 1",
@@ -48,7 +48,7 @@
         "dialView": "overview",
         "theme": "void"
       },
-      "build": "1.0.0.0-mac7",
+      "build": "1.0.1.0-mac7",
       "width": 378,
       "dpr": 2,
       "overflow": 0
@@ -56,7 +56,7 @@
     {
       "file": "settings-reading-colors.png",
       "kind": "settings-panel capture, simulated host, sample data",
-      "sha256": "e0362f826bb55504e59cbbe54c490e263381dd06f49a1dc482d2a0fd64791e5d",
+      "sha256": "d5d01780e22ac4551b13fb9e3dcbddcdb83eb58c54f5d46f7e0848130409d3ff",
       "settings": {
         "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
         "label": "CPU super 1",
@@ -73,7 +73,83 @@
           "mac:v1:smc:Mac17%2C9:46304163:rpm.v1": "#38CD89"
         }
       },
-      "build": "1.0.0.0-mac7",
+      "build": "1.0.1.0-mac7",
+      "width": 378,
+      "dpr": 2,
+      "overflow": 0
+    },
+    {
+      "file": "settings-picker.png",
+      "kind": "settings-panel capture, simulated host, sample data",
+      "sha256": "438ac8359737b9fc1a7eba3169e5e86523dee7984b1f950d0aef21ad286e6cd2",
+      "settings": {
+        "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+        "label": "CPU super 1",
+        "displayMode": "sparkline",
+        "theme": "void",
+        "warnValue": "75",
+        "critValue": "90"
+      },
+      "picker": "cpu",
+      "build": "1.0.1.0-mac7",
+      "width": 378,
+      "dpr": 2,
+      "overflow": 0
+    },
+    {
+      "file": "settings-dial-controls.png",
+      "kind": "settings-panel capture, simulated host, sample data",
+      "sha256": "82ce83188045194db104ed7c7843c294ecfa4f083c781ac2519ac0577ca568f4",
+      "settings": {
+        "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+        "label": "CPU super 1",
+        "rotationKeys": [
+          "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+          "mac:v1:smc:Mac17%2C9:54673055:temp.v1",
+          "mac:v1:smc:Mac17%2C9:46304163:rpm.v1"
+        ],
+        "dialView": "overview",
+        "theme": "void",
+        "controlPreset": "custom"
+      },
+      "open": [
+        "sec-interaction"
+      ],
+      "clip": "#sec-interaction",
+      "build": "1.0.1.0-mac7",
+      "width": 378,
+      "dpr": 2,
+      "overflow": 0
+    },
+    {
+      "file": "settings-control.png",
+      "kind": "settings-panel capture, simulated host, sample data",
+      "sha256": "2ab9838139ee40644a26744fae7bdba491abf615916eef66e7ba40243dd8f2ae",
+      "settings": {},
+      "clip": "body",
+      "build": "1.0.1.0-mac7",
+      "width": 378,
+      "dpr": 2,
+      "overflow": 0
+    },
+    {
+      "file": "settings-press-details.png",
+      "kind": "settings-panel capture, simulated host, sample data",
+      "sha256": "ec60a9b4361e995411add927f8247ea596de5f9b14884df42c65f3b553e020cd",
+      "settings": {
+        "readingKey": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+        "label": "CPU super 1",
+        "displayMode": "sparkline",
+        "theme": "void",
+        "warnValue": "75",
+        "critValue": "90",
+        "pressBehavior": "open-details"
+      },
+      "open": [
+        "sec-interaction"
+      ],
+      "clip": "#sec-interaction",
+      "build": "1.0.1.0-mac7",
       "width": 378,
       "dpr": 2,
       "overflow": 0

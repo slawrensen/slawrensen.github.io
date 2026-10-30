@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Page not found</title>
+	<meta name="robots" content="noindex" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<script>
+		// GitHub Pages serves only this root 404.html, never a folder's own. A missing page under a documentation
+		// folder that ships its own 404.html shows that page in place: the address stays and the status stays 404.
+		(function () {
+			var folders = ['/mac-streamdeck/'];
+			var path = location.pathname;
+			for (var i = 0; i < folders.length; i++) {
+				if (path.indexOf(folders[i]) !== 0 || path === folders[i] + '404.html') continue;
+				document.documentElement.style.visibility = 'hidden';
+				fetch(folders[i] + '404.html', { credentials: 'same-origin' })
+					.then(function (response) { if (!response.ok) throw new Error(response.status); return response.text(); })
+					.then(function (html) { document.open(); document.write(html); document.close(); })
+					.catch(function () { document.documentElement.style.visibility = ''; });
+				return;
+			}
+		})();
+	</script>
+	<style>
+		:root { color-scheme: dark; }
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			min-height: 100vh;
+			background: #000;
+			color: #e8edf7;
+			font: 16px/1.6 "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			padding: 10vh 24px 24px;
+		}
+		main { width: 100%; max-width: 640px; }
+		h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+		.tag { color: #7a8393; margin: 0 0 40px; }
+		h2 {
+			font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+			color: #667082; font-weight: 600; margin: 0 0 12px;
+		}
+		ul { list-style: none; margin: 0; padding: 0; }
+		li {
+			border: 1px solid #161a21; border-radius: 12px;
+			padding: 16px 18px; margin-bottom: 12px;
+			transition: border-color 0.15s ease;
+		}
+		li:hover { border-color: #2a2f3a; }
+		li a { color: #e8edf7; font-weight: 600; text-decoration: none; }
+		li a:hover { color: #4cc2ff; }
+		footer { color: #4a505c; font-size: 0.8rem; margin-top: 48px; }
+		footer a { color: #667082; text-decoration: none; }
+		footer a:hover { color: #7a8393; }
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Page not found</h1>
+		<p class="tag">Nothing is published at this address.</p>
+
+		<h2>Documentation</h2>
+		<ul>
+			<li><a href="/mac-streamdeck/">Mac Sensors for Stream Deck</a></li>
+			<li><a href="/hwinfo-streamdeck/">HWiNFO Sensors for Stream Deck</a></li>
+		</ul>
+
+		<footer>
+			<a href="/">docs.slawrensen.com</a>
+		</footer>
+	</main>
+</body>
+</html>

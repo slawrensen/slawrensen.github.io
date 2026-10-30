@@ -1,0 +1,267 @@
+{
+  "schema": 1,
+  "command": "npm run docs:crops",
+  "kind": "Crops and resizes of pinned documentation images; each keeps its source image kind",
+  "images": [
+    {
+      "file": "crops/key-layouts-top-row.png",
+      "source": {
+        "file": "docs/assets/img/key-layouts.png",
+        "sha256": "82552292fb3d201407d23cb785f3b6d3ce40540764cc249e21f3d503cf569c1a"
+      },
+      "regions": [
+        {
+          "left": 196,
+          "top": 180,
+          "width": 888,
+          "height": 216
+        }
+      ],
+      "width": 888,
+      "height": 216,
+      "bytes": 29906,
+      "sha256": "93f80ae3f0be19f7cba990979ceb5511e5a69c34845af1ffb0df66b3ef792702"
+    },
+    {
+      "file": "crops/dials-two-row.png",
+      "source": {
+        "file": "docs/assets/img/dials.png",
+        "sha256": "eee4de8b8154954f0fd6711c48a2f2291f235cdd5d97b177b9cd9a52b66efd66"
+      },
+      "regions": [
+        {
+          "left": 454,
+          "top": 252,
+          "width": 372,
+          "height": 196
+        }
+      ],
+      "width": 372,
+      "height": 196,
+      "bytes": 13079,
+      "sha256": "a36ed3cb51e75f79503f2bb34ef38e313e7bbc6842d31903b13c20c2ce62787d"
+    },
+    {
+      "file": "crops/details-top-rows.png",
+      "source": {
+        "file": "docs/assets/img/details.png",
+        "sha256": "7ba3c0c4d3f8d11e9a6354f41a17bdf1348fbea3697ff9db84e1bbaf28590c31"
+      },
+      "regions": [
+        {
+          "left": 222,
+          "top": 165,
+          "width": 836,
+          "height": 332
+        }
+      ],
+      "width": 836,
+      "height": 332,
+      "bytes": 28630,
+      "sha256": "c408307a60939399ce3396982005e2fbb17feb19fa73fbe9f089f321f8b66af0"
+    },
+    {
+      "file": "crops/settings-control-header.png",
+      "source": {
+        "file": "docs/assets/img/settings-control.png",
+        "sha256": "2ab9838139ee40644a26744fae7bdba491abf615916eef66e7ba40243dd8f2ae"
+      },
+      "regions": [
+        {
+          "left": 0,
+          "top": 0,
+          "width": 756,
+          "height": 300
+        }
+      ],
+      "width": 756,
+      "height": 300,
+      "bytes": 27002,
+      "sha256": "8ffd83fd5456e4beb1cc814a12e7c465721a560aa905aba1201608998160cfc1"
+    },
+    {
+      "file": "crops/readme-hero.png",
+      "source": {
+        "file": "docs/assets/img/readme-hero.png",
+        "sha256": "c6409ce2a7b2d9306e4986187f8a70e75bc74fc1508211abf3155f3861094983"
+      },
+      "regions": [
+        {
+          "left": 48,
+          "top": 166,
+          "width": 1504,
+          "height": 791
+        }
+      ],
+      "width": 1504,
+      "height": 791,
+      "bytes": 165822,
+      "sha256": "13c87a5c4214296e056c4f0b878fda3d7b63397632f385e56801cb1a717e2d08"
+    },
+    {
+      "file": "crops/themes.png",
+      "source": {
+        "file": "docs/assets/img/themes.png",
+        "sha256": "fa13a5c936955618badc12090da38701cfc64057c1bf5f71faaee8d3dcedae7d"
+      },
+      "regions": [
+        {
+          "left": 182,
+          "top": 166,
+          "width": 916,
+          "height": 472
+        }
+      ],
+      "width": 916,
+      "height": 472,
+      "bytes": 50834,
+      "sha256": "9f3d1a274aeecce7440a779d4964dcad8009598c5192704f8213ae34be479955"
+    },
+    {
+      "file": "crops/accents.png",
+      "source": {
+        "file": "docs/assets/img/accents.png",
+        "sha256": "d067d76a3fca188de90a5fe884c9660173fe21f79ad914cc8f8fb43bb8e57127"
+      },
+      "regions": [
+        {
+          "left": 182,
+          "top": 166,
+          "width": 916,
+          "height": 472
+        }
+      ],
+      "width": 916,
+      "height": 472,
+      "bytes": 48260,
+      "sha256": "77c8a1386f6f57bc1357ca3bcada8281fe05d7c786b5528a413620516fe185d6"
+    },
+    {
+      "file": "crops/reading-colors.png",
+      "source": {
+        "file": "docs/assets/img/reading-colors.png",
+        "sha256": "543e6d66043724b7eea3c72f5c5e607c4e7770e0dd5811ab86d3aa5a2b506e0d"
+      },
+      "regions": [
+        {
+          "left": 252,
+          "top": 238,
+          "width": 776,
+          "height": 224
+        }
+      ],
+      "width": 776,
+      "height": 224,
+      "bytes": 19215,
+      "sha256": "e8cd599afe18b1de2fb8b14ea0e5323ad24dc847c515cc568f47ca5d784cf0e8"
+    },
+    {
+      "file": "crops/stat-modes.png",
+      "source": {
+        "file": "docs/assets/img/stat-modes.png",
+        "sha256": "103067a5cd2cc55c369e594de4c1df48675b9a2f11503d72e293ae2aa7639967"
+      },
+      "regions": [
+        {
+          "left": 182,
+          "top": 166,
+          "width": 916,
+          "height": 472
+        }
+      ],
+      "width": 916,
+      "height": 472,
+      "bytes": 31924,
+      "sha256": "c40c9940ecbc9c59167549c1efd3b9b9596e1705ca9b0d7514d3d2b4ff69a83f"
+    },
+    {
+      "file": "crops/settings-reading-colors-display.png",
+      "source": {
+        "file": "docs/assets/img/settings-reading-colors.png",
+        "sha256": "d5d01780e22ac4551b13fb9e3dcbddcdb83eb58c54f5d46f7e0848130409d3ff"
+      },
+      "regions": [
+        {
+          "left": 0,
+          "top": 1266,
+          "width": 756,
+          "height": 1184
+        }
+      ],
+      "width": 756,
+      "height": 1184,
+      "bytes": 74238,
+      "sha256": "3f2aa6db6c9e32aa3fe7e53695005e13c5c3879fed918a6f5322878be3134024"
+    },
+    {
+      "file": "crops/settings-dial-display.png",
+      "source": {
+        "file": "docs/assets/img/settings-dial.png",
+        "sha256": "6014f4d5e090bc20736776c31a830ac6d39697b0666599ae9a2cf744ba603dbc"
+      },
+      "regions": [
+        {
+          "left": 0,
+          "top": 0,
+          "width": 756,
+          "height": 210
+        },
+        {
+          "left": 0,
+          "top": 1266,
+          "width": 756,
+          "height": 1252
+        }
+      ],
+      "width": 756,
+      "height": 1462,
+      "bytes": 97712,
+      "sha256": "2432cfa57b08173543f2f19dc2632e76269e05e04c200604ed4e08ffc9a0a179"
+    },
+    {
+      "file": "brand/mac-sensors-icon-16.png",
+      "source": {
+        "file": "com.lawrensen.mac.sdPlugin/imgs/plugin/marketplace@2x.png",
+        "sha256": "feaa2c2fbd7d119347a4b542f096562a3645a2b79b5dfdb0fd0d366eb64de587"
+      },
+      "resize": {
+        "width": 16,
+        "height": 16
+      },
+      "width": 16,
+      "height": 16,
+      "bytes": 615,
+      "sha256": "9093056e4f212c3c64f119299286014ec77b0273be501079adb7783d75f78d43"
+    },
+    {
+      "file": "brand/mac-sensors-icon-32.png",
+      "source": {
+        "file": "com.lawrensen.mac.sdPlugin/imgs/plugin/marketplace@2x.png",
+        "sha256": "feaa2c2fbd7d119347a4b542f096562a3645a2b79b5dfdb0fd0d366eb64de587"
+      },
+      "resize": {
+        "width": 32,
+        "height": 32
+      },
+      "width": 32,
+      "height": 32,
+      "bytes": 1377,
+      "sha256": "d6a51d9f1167f3d9dfb76d6eacb2025e4bab50dd5a55bdf330c8e9dd4b41f619"
+    },
+    {
+      "file": "brand/mac-sensors-icon-180.png",
+      "source": {
+        "file": "com.lawrensen.mac.sdPlugin/imgs/plugin/marketplace@2x.png",
+        "sha256": "feaa2c2fbd7d119347a4b542f096562a3645a2b79b5dfdb0fd0d366eb64de587"
+      },
+      "resize": {
+        "width": 180,
+        "height": 180
+      },
+      "width": 180,
+      "height": 180,
+      "bytes": 10980,
+      "sha256": "e71f2fe68fdce906e8798778aa4bd8948c1b8bd2dacd07deada61ed307ed12c6"
+    }
+  ]
+}

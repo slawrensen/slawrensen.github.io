@@ -344,7 +344,7 @@ html:not(.docs-js) .hero-gallery figure + figure { margin-top: 28px; }
 	.page-toc a { min-height: 44px; }
 	.docs-footer { font-size: var(--font-small); }
 	.footer-links { gap: 2px 16px; font-size: var(--font-ui); }
-	.footer-links a { min-height: 44px; display: flex; align-items: center; }
+	.footer-links a { min-height: 44px; display: flex; align-items: center; gap: .3em; }
 	.image-viewer { width: calc(100vw - 16px); height: calc(100dvh - 16px); }
 	.viewer-toolbar { padding: 8px; flex-wrap: wrap; gap: 8px; }
 	.viewer-caption { flex-basis: 100%; font-size: var(--font-small); max-height: 3em; -webkit-line-clamp: 2; }
@@ -354,10 +354,9 @@ html:not(.docs-js) .hero-gallery figure + figure { margin-top: 28px; }
 	.viewer-navigation, .viewer-notice { padding: 8px; }
 }
 /* Mac Sensors additions. */
-.main-content .release-note, .release-note { max-width: var(--article-measure); margin: 0 0 28px; padding: 12px 16px; border: 1px solid var(--line); border-left: 2px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; background: var(--surface); color: var(--copy); font-size: var(--font-small); line-height: 1.6; }
-/* Settings-panel captures are recorded at 2x a 378px panel. Show them at the
-   panel's own width; the viewer offers the recorded pixels. */
-.main-content img[src*="/assets/img/settings-"] { width: 378px; }
+/* Settings-panel captures, and crops of them, are recorded at 2x a 378px
+   panel. Show them at the panel's own width; the viewer offers the recorded pixels. */
+.main-content img[src*="/assets/img/settings-"], .main-content img[src*="/assets/img/crops/settings-"] { width: 378px; }
 /* Renderer boards are 1280px masters. On wide screens keep them with the
    reference-table width instead of spanning the whole workspace. */
 .main-content p:has(> img, > .image-link) img { max-width: min(100%, var(--table-measure)); }
@@ -368,7 +367,7 @@ html:not(.docs-js) .hero-gallery figure + figure { margin-top: 28px; }
 .docs-js .hero-gallery [data-gallery-slide] { grid-area: 1 / 1; }
 .docs-js .hero-gallery [data-gallery-slide][hidden] { display: block !important; visibility: hidden; }
 .docs-home .main-content > h2, .home-deck { border-top: 1px solid var(--line); }
-.docs-home .main-content > h2 { margin-top: 48px; padding-top: 26px; }
+.docs-home .main-content > h2 { margin-top: 48px; padding-top: 26px; font-size: 23px !important; }
 .home-deck { padding-top: 26px; }
 .main-content .home-deck h2 { font-size: 23px !important; margin: 0 0 24px; padding: 0; }
 .main-content .deck-grid { list-style: none; padding: 0; margin: 0 0 24px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px 24px; }
@@ -387,8 +386,13 @@ html:not(.docs-js) .hero-gallery figure + figure { margin-top: 28px; }
 .main-content .home-deck > p { max-width: var(--article-measure); }
 @media (max-width: 1199px) { .main-content .deck-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) {
-	.main-content .deck-grid { grid-template-columns: 1fr; gap: 32px; }
-	.main-content .deck-card figcaption { min-height: 0; }
+	.main-content .deck-grid { grid-template-columns: 1fr; gap: 28px; }
+	/* Thumbnail beside the text, as the showcase cards lay out on phones; the
+	   capture label stays under the thumbnail. */
+	.main-content .deck-card { display: grid; grid-template-columns: 132px minmax(0,1fr); column-gap: 16px; align-items: start; }
+	.main-content .deck-card figure { grid-row: 1 / span 3; }
+	.main-content .deck-card figcaption { min-height: 0; margin-top: 6px; line-height: 1.4; }
+	.main-content .deck-card h3 { margin-top: 0; }
 	/* Mac reference tables carry prose in several columns, which reads as
 	   narrow towers at phone width. docs.js labels each cell; stack each row
 	   as a block with its labels. Without script the table scrolls instead. */
@@ -400,7 +404,6 @@ html:not(.docs-js) .hero-gallery figure + figure { margin-top: 28px; }
 	.main-content table.stacked td:first-child { padding-top: 6px; font-weight: 600; }
 	.main-content table.stacked .cell-label { display: block; color: var(--muted); font-size: var(--font-small); font-weight: 600; line-height: 1.5; }
 	.main-content table.stacked td:first-child .cell-label { display: none; }
-	.release-note { margin-bottom: 24px; }
 }
 /* Keep the labelled control clear of the brand during narrow-window reflow. */
 @media (max-width: 360px) {

@@ -1,3 +1,6 @@
+// Just the Docs v0.10.1 (MIT), pinned upstream search/navigation script.
+// Local changes: input/paste and pre-index search; preserve scroll position.
+// Upstream: https://github.com/just-the-docs/just-the-docs/tree/v0.10.1
 (function (jtd, undefined) {
 
 // Event handling
@@ -89,7 +92,6 @@ function initSearch() {
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
-        this.field('relUrl');
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
@@ -98,7 +100,6 @@ function initSearch() {
             id: i,
             title: docs[i].title,
             content: docs[i].content,
-            relUrl: docs[i].relUrl
           });
         }
       });
@@ -124,6 +125,15 @@ function searchLoaded(index, docs) {
   var mainHeader = document.getElementById('main-header');
   var currentInput;
   var currentSearchIndex = 0;
+  // add event listener on ctrl + <focus_shortcut_key> for showing the search input
+  jtd.addEvent(document, 'keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+
+      mainHeader.classList.add('nav-open');
+      searchInput.focus();
+    }
+  });
 
   function showSearch() {
     document.documentElement.classList.add('search-active');
@@ -141,9 +151,7 @@ function searchLoaded(index, docs) {
       hideSearch();
     } else {
       showSearch();
-      // scroll search input into view, workaround for iOS Safari
-      window.scroll(0, -1);
-      setTimeout(function(){ window.scroll(0, 0); }, 0);
+      // The docs search field is sticky; preserve the reader's scroll position.
     }
     if (input === currentInput) {
       return;
@@ -277,7 +285,7 @@ function searchLoaded(index, docs) {
               }
               previewStart = nextSpace + 1;
             }
-            for (var k = 0; k < 10; k++) {
+            for (var k = 0; k < 12; k++) {
               var nextSpace = doc.content.indexOf(' ', previewEnd + 1);
               var nextDot = doc.content.indexOf('. ', previewEnd + 1);
               if ((nextDot >= 0) && (nextDot < nextSpace)) {
@@ -337,7 +345,7 @@ function searchLoaded(index, docs) {
         resultLink.appendChild(resultPreviews);
 
         var content = doc.content;
-        for (var j = 0; j < Math.min(previewPositions.length, 3); j++) {
+        for (var j = 0; j < Math.min(previewPositions.length, 2); j++) {
           var position = previewPositions[j];
 
           var resultPreview = document.createElement('div');
@@ -353,10 +361,6 @@ function searchLoaded(index, docs) {
           }
         }
       }
-      var resultRelUrl = document.createElement('span');
-      resultRelUrl.classList.add('search-result-rel-url');
-      resultRelUrl.innerText = doc.relUrl;
-      resultTitle.appendChild(resultRelUrl);
     }
 
     function addHighlightedText(parent, text, start, end, positions) {
@@ -381,6 +385,9 @@ function searchLoaded(index, docs) {
   jtd.addEvent(searchInput, 'focus', function(){
     setTimeout(update, 0);
   });
+
+  // input also covers paste, native clear, speech input and mobile keyboards.
+  jtd.addEvent(searchInput, 'input', update);
 
   jtd.addEvent(searchInput, 'keyup', function(e){
     switch (e.keyCode) {
@@ -445,6 +452,8 @@ function searchLoaded(index, docs) {
       hideSearch();
     }
   });
+  // The index can arrive after a visitor has already entered a query.
+  if (searchInput.value) update();
 }
 
 // Switch theme

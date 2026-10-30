@@ -534,7 +534,7 @@
       "file": "readme-hero.png",
       "width": 1600,
       "height": 1040,
-      "sha256": "3dfa311beb470d148a47ac10748593ca4eac910ea4751f7b310129fd7c24b20b",
+      "sha256": "c6409ce2a7b2d9306e4986187f8a70e75bc74fc1508211abf3155f3861094983",
       "sceneIds": [
         "theme-void",
         "theme-graphite",
@@ -571,7 +571,7 @@
       "file": "hero.png",
       "width": 1280,
       "height": 720,
-      "sha256": "ccffb53e41dda9188f3dde078c87f2da8efe8a4bab7f57ca8f7dfad1b9b6ef1f",
+      "sha256": "ad16bf85a1319eb210b85771096231db7d24bc760448072792fdc737aa42c846",
       "sceneIds": [
         "reading-0",
         "reading-1",
@@ -585,7 +585,7 @@
       "file": "key-layouts.png",
       "width": 1280,
       "height": 720,
-      "sha256": "81ddcbfdf5d5a1d69857861389ede243c77879b7d47f3ab92a8502a652a57774",
+      "sha256": "82552292fb3d201407d23cb785f3b6d3ce40540764cc249e21f3d503cf569c1a",
       "sceneIds": [
         "reading-0",
         "layout-dual",
@@ -602,7 +602,7 @@
       "file": "details.png",
       "width": 1280,
       "height": 720,
-      "sha256": "23eecc91d7d359bc455cc71d228cc989264cb2eba0f69ff99d8c390363c4fc1c",
+      "sha256": "7ba3c0c4d3f8d11e9a6354f41a17bdf1348fbea3697ff9db84e1bbaf28590c31",
       "sceneIds": [
         "detail-page-back",
         "detail-page-title",
@@ -626,7 +626,7 @@
       "file": "dials.png",
       "width": 1280,
       "height": 720,
-      "sha256": "16ce97a1ea236697fd0581e8142eb3e0dd0255cfd5dd410a6b06847fb4c579be",
+      "sha256": "eee4de8b8154954f0fd6711c48a2f2291f235cdd5d97b177b9cd9a52b66efd66",
       "sceneIds": [
         "dial-single",
         "dial-tworow",
@@ -638,7 +638,7 @@
       "file": "themes.png",
       "width": 1280,
       "height": 720,
-      "sha256": "1d6b21f88aef9a5841b821fe25226c52c3ba7afc01b6c6a74aa24ca7e4099dc9",
+      "sha256": "fa13a5c936955618badc12090da38701cfc64057c1bf5f71faaee8d3dcedae7d",
       "sceneIds": [
         "theme-void",
         "theme-graphite",
@@ -654,7 +654,7 @@
       "file": "alerts.png",
       "width": 1280,
       "height": 720,
-      "sha256": "cea41b29092abb0f79d99a34cf730973527188b30e0a278d4dc5d475e37686a5",
+      "sha256": "0504875e5baa6a3297f4a17e059f0d2fd0853f43893edeec462215a52dd789e2",
       "sceneIds": [
         "reading-0",
         "warn",
@@ -667,7 +667,7 @@
       "file": "reading-colors.png",
       "width": 1280,
       "height": 720,
-      "sha256": "e33bac43cb36b71f2a31f3a8a12a5e0ddcf0457b2c52cd969fd12afd9fd6011b",
+      "sha256": "543e6d66043724b7eea3c72f5c5e607c4e7770e0dd5811ab86d3aa5a2b506e0d",
       "sceneIds": [
         "dial-overview",
         "dial-overview-colored"
@@ -694,7 +694,7 @@
       "file": "accents.png",
       "width": 1280,
       "height": 720,
-      "sha256": "00da9411d661c3e6bc7c1c076f13c017e35c52b42a45ebf25a0b8b21fc08a4da",
+      "sha256": "d067d76a3fca188de90a5fe884c9660173fe21f79ad914cc8f8fb43bb8e57127",
       "sceneIds": [
         "accent-reading-0",
         "accent-reading-1",
@@ -711,7 +711,7 @@
       "file": "stat-modes.png",
       "width": 1280,
       "height": 720,
-      "sha256": "49a226a3bcea695af78d580cf2322a63f726a6ae3b3509f6877191a297229974",
+      "sha256": "103067a5cd2cc55c369e594de4c1df48675b9a2f11503d72e293ae2aa7639967",
       "sceneIds": [
         "stat-single-current",
         "stat-single-min",

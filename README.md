@@ -12,9 +12,10 @@ Adding a project is nothing more than enabling Pages on that repo; do not add a
 `.nojekyll` keeps this a plain static page (no build step). The project docs
 under each subpath run their own Jekyll build in their own repo.
 
-Mac Sensors keeps its product repository private. Its reviewed, generated
-HTML, CSS, JavaScript and image documentation is published in `mac-streamdeck/`
-to preserve the existing documentation URL. This directory contains static
+Mac Sensors documentation is built from
+[slawrensen/mac-sensors-streamdeck](https://github.com/slawrensen/mac-sensors-streamdeck)
+and published here in `mac-streamdeck/` as static HTML, CSS, JavaScript and
+images, which keeps the existing documentation URL. This directory holds
 publication output only, never the product source, binaries or private records.
-Review a fresh documentation artifact before updating it; do not copy the
-product checkout into this repository.
+Review a fresh documentation build before updating it; do not copy the product
+checkout into this repository.

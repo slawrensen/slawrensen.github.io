@@ -1,5 +1,10 @@
 # Security policy
 
-To report a security concern about Mac Sensors or this documentation site, [open a private security report](https://github.com/slawrensen/slawrensen.github.io/security/advisories/new). Include the affected product, version and steps needed to reproduce it. Keep vulnerability details out of public issues.
-
-I aim to send a first reply within seven days. Mac Sensors product source and release downloads require repository access; this public repository contains the documentation and provides the private reporting route.
+Report a security concern about Mac Sensors through its repository's
+[private security report form](https://github.com/slawrensen/mac-sensors-streamdeck/security/advisories/new),
+and one about HWiNFO Sensors through
+[its form](https://github.com/slawrensen/hwinfo-streamdeck/security/advisories/new).
+For this documentation site itself, use
+[this repository's form](https://github.com/slawrensen/slawrensen.github.io/security/advisories/new).
+Include the affected product, version and steps to reproduce it, and keep
+vulnerability details out of public issues. I aim to reply within seven days.

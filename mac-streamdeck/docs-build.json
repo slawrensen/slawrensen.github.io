@@ -1,8 +1,8 @@
 {
   "schema": 1,
   "kind": "documentation-production",
-  "source_commit": "867f58e78c5c5d43c9dc55a6a5e139de4ca84a0f",
-  "build_id": "docs-867f58e78c5c",
+  "source_commit": "ded2259fb3971388731a39d610a203afcb0dc272",
+  "build_id": "docs-ded2259fb397",
   "base_path": "/mac-streamdeck",
-  "source_plugin_version": "1.0.1.0"
+  "source_plugin_version": "1.0.2.0"
 }

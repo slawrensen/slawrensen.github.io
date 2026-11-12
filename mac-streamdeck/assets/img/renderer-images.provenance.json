@@ -11,7 +11,7 @@
   "sampleData": true,
   "readings": [
     {
-      "key": "mac:v1:smc:Mac17%2C9:54703030:temp.v1",
+      "key": "mac:v1:smc:Mac17%2C9:54703034:temp.v1",
       "label": "CPU super core 1",
       "unit": "°C",
       "value": 62.4,

@@ -21,18 +21,20 @@
 			padding: 10vh 24px 24px;
 		}
 		.page { width: 100%; max-width: 640px; }
-		/* The mark and name are slawrensen.com's own, and lead back to it. */
+		/* The mark and name are slawrensen.com's own, and lead back to it. There they sit in a
+		   navigation bar beside five links (a 30 to 36 px mark); here they stand alone as the
+		   page's masthead, so they are drawn larger, in the same proportions. */
 		.brand {
-			display: inline-flex; align-items: center; gap: 11px; min-height: 44px; margin: 0 0 36px;
-			color: #f4f6fa; text-decoration: none; font-weight: 600; letter-spacing: -0.01em;
+			display: inline-flex; align-items: center; gap: 14px; min-height: 48px; margin: 0 0 40px;
+			color: #f4f6fa; text-decoration: none; font-size: 1.375rem; font-weight: 600; letter-spacing: -0.01em;
 		}
 		.brand .mark {
 			width: 2.35em; height: 2.35em; border-radius: .6em; flex: none; display: grid; place-items: center;
-			background: #000; border: 1px solid #2a2f3a; border-bottom: 3px solid #4cc2ff;
-			font: 800 .8rem "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, ui-monospace, monospace;
+			background: #000; border: 1px solid #2a2f3a; border-bottom: 4px solid #4cc2ff;
+			font: 800 1.17rem "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, ui-monospace, monospace;
 		}
 		.brand:hover .word { color: #4cc2ff; }
-		h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+		h1 { font-size: 2rem; line-height: 1.25; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.015em; }
 		.tag { color: #7a8393; margin: 0 0 40px; }
 		ul { list-style: none; margin: 0; padding: 0; }
 		li {

@@ -1,7 +1,9 @@
 # slawrensen.github.io
 
-Personal landing page and docs hub, served at
-[docs.slawrensen.com](https://docs.slawrensen.com/).
+The docs hub of [slawrensen.com](https://slawrensen.com/), served at
+[docs.slawrensen.com](https://docs.slawrensen.com/). The root page carries the
+home page's own mark and name, which lead back to it, and lists each
+project's documentation.
 
 This user-site repo owns the `docs.slawrensen.com` custom domain (see `CNAME`).
 Project repos with GitHub Pages enabled appear underneath it as subpaths, for

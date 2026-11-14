@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="15" fill="#111317"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="#000000"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="34" font-weight="800" letter-spacing="-1.5" fill="#f4f6fa">SL</text>
+  <rect x="13" y="49" width="38" height="5" rx="2.5" fill="#4cc2ff"/>
+</svg>

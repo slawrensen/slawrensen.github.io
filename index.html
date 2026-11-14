@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Stephen Lawrensen</title>
-	<meta name="description" content="Software I build and ship, with the docs to go with it." />
-	<link rel="icon" type="image/png" href="/favicon.png" />
+	<title>Docs · slawrensen</title>
+	<meta name="description" content="Documentation for HWiNFO Sensors and Mac Sensors, two Stream Deck plugins." />
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	<link rel="alternate icon" type="image/png" href="/favicon.png" />
 	<style>
 		:root { color-scheme: dark; }
 		* { box-sizing: border-box; }
@@ -19,14 +20,20 @@
 			justify-content: center;
 			padding: 10vh 24px 24px;
 		}
-		main { width: 100%; max-width: 640px; }
-		.avatar { width: 72px; height: 72px; border-radius: 18px; display: block; margin: 0 0 20px; }
+		.page { width: 100%; max-width: 640px; }
+		/* The mark and name are slawrensen.com's own, and lead back to it. */
+		.brand {
+			display: inline-flex; align-items: center; gap: 11px; min-height: 44px; margin: 0 0 36px;
+			color: #f4f6fa; text-decoration: none; font-weight: 600; letter-spacing: -0.01em;
+		}
+		.brand .mark {
+			width: 2.35em; height: 2.35em; border-radius: .6em; flex: none; display: grid; place-items: center;
+			background: #000; border: 1px solid #2a2f3a; border-bottom: 3px solid #4cc2ff;
+			font: 800 .8rem "SF Mono", "Cascadia Code", "JetBrains Mono", Consolas, ui-monospace, monospace;
+		}
+		.brand:hover .word { color: #4cc2ff; }
 		h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
 		.tag { color: #7a8393; margin: 0 0 40px; }
-		h2 {
-			font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
-			color: #7a8393; font-weight: 600; margin: 0 0 12px;
-		}
 		ul { list-style: none; margin: 0; padding: 0; }
 		li {
 			border: 1px solid #161a21; border-radius: 12px;
@@ -45,37 +52,45 @@
 		footer { color: #4a505c; font-size: 0.8rem; margin-top: 48px; }
 		footer a { color: #7a8393; text-decoration: none; }
 		footer a:hover { color: #9aa3b2; }
+		footer span { margin: 0 8px; }
 	</style>
 </head>
 <body>
-	<main>
-		<img class="avatar" src="/assets/avatar.png" width="72" height="72" alt="" />
-		<h1>Stephen Lawrensen</h1>
-		<p class="tag">Systems engineer. I build tools I needed and ship them.</p>
+	<div class="page">
+		<header>
+			<a class="brand" href="https://slawrensen.com/">
+				<span class="mark" aria-hidden="true">SL</span>
+				<span class="word">slawrensen</span>
+			</a>
+		</header>
 
-		<h2>Projects</h2>
-		<ul>
-			<li>
-				<div class="name"><a href="/hwinfo-streamdeck/">HWiNFO Sensors for Stream Deck</a></div>
-				<div class="desc">Live HWiNFO hardware readings on Elgato Stream Deck keys and dials. Windows, free, MIT.</div>
-				<div class="links">
-					<a href="/hwinfo-streamdeck/">Docs</a>
-					<a href="https://github.com/slawrensen/hwinfo-streamdeck">Source</a>
-				</div>
-			</li>
-			<li>
-				<div class="name"><a href="/mac-streamdeck/">Mac Sensors for Stream Deck</a></div>
-				<div class="desc">Live Mac sensor readings on Elgato Stream Deck keys and dials. macOS, free, MIT.</div>
-				<div class="links">
-					<a href="/mac-streamdeck/">Docs</a>
-					<a href="https://github.com/slawrensen/mac-sensors-streamdeck">Source</a>
-				</div>
-			</li>
-		</ul>
+		<main>
+			<h1>Docs</h1>
+			<p class="tag">Setup, settings and troubleshooting for each plugin.</p>
+
+			<ul>
+				<li>
+					<div class="name"><a href="/hwinfo-streamdeck/">HWiNFO Sensors for Stream Deck</a></div>
+					<div class="desc">Live HWiNFO hardware readings on Elgato Stream Deck keys and dials. Windows, free, MIT.</div>
+					<div class="links">
+						<a href="/hwinfo-streamdeck/">Docs</a>
+						<a href="https://github.com/slawrensen/hwinfo-streamdeck">Source</a>
+					</div>
+				</li>
+				<li>
+					<div class="name"><a href="/mac-streamdeck/">Mac Sensors for Stream Deck</a></div>
+					<div class="desc">Live Mac sensor readings on Elgato Stream Deck keys and dials. macOS, free, MIT.</div>
+					<div class="links">
+						<a href="/mac-streamdeck/">Docs</a>
+						<a href="https://github.com/slawrensen/mac-sensors-streamdeck">Source</a>
+					</div>
+				</li>
+			</ul>
+		</main>
 
 		<footer>
-			<a href="https://github.com/slawrensen">github.com/slawrensen</a>
+			<a href="https://slawrensen.com/">slawrensen.com</a><span aria-hidden="true">·</span><a href="https://github.com/slawrensen">GitHub</a>
 		</footer>
-	</main>
+	</div>
 </body>
 </html>
